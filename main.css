@@ -5,13 +5,19 @@ body {
 	background-color: #000; 
 	color:#FFF;
 	}
+	
 #encabezado{
 	width: 94%;
 	margin: auto;
 	background-color: rgba(165, 151, 159, .35);
 	border-top-left-radius: 40px;
 	border-bottom-right-radius:40px;
-	text-shadow: 1px 1px 18px #c710c7;
+	text-shadow: 1px 1px 8px red;
+	}
+	
+#encabezado table{
+	margin-top: 8px;
+	margin-bottom: 8px;
 	}
 	
 #contenido{
@@ -26,24 +32,29 @@ body {
 	font-size:13px;
 	text-shadow: 1px 1px px #F0F;
 	}
+	
 #contenido img{
+	margin-top: 25px;
+	margin-top: 25px;
 	margin-left: 225px;
 	}
+	
 .barco {
-transition:All 1s ease;
--webkit-transition:All 1s ease;
--moz-transition:All 1s ease;
--o-transition:All 1s ease;
-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
--webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
--moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
--o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
--ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	transition:All 1s ease;
+	-webkit-transition:All 1s ease;
+	-moz-transition:All 1s ease;
+	-o-transition:All 1s ease;
+	transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
 }
+
 .barco:hover{
-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
--webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
--moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
--o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
--ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
 }
