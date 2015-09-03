@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* Diseño de la estructura principal de las clases
+   Usando "selectores" creados por Uno.
+ 	**RECORDAR QUE LAS CLASES SE DEFINENE CON UN
+	  .SEGUIDO DEL NOMBRE DE LA CLASE.
+	 **RECORDAR QUE LOS ID SE INICIAN CON UN 
+	   #SEGUIDO DEL NOMBRE.
+	*** LAS CLASES SON PRIMERO Y SUPERIORES A LOS ID  
+ */
+body {background-color:#000;}
+.encabezado
+{	/* TAMAÑO DE PAGINA
+	   MARGENES
+	   PROPIEDADES DE LETRA DE LETRA.
+	   PADING. */ 
+	width: 88%;
+	height: 100%;	
+	margin:auto;
+	font-family: "1942 report";
+	/* background-color: rgb(77,87,114); */
+	/* border radius nativo*/
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	/* navegadores basados en 'mozilla' */
+	-moz-border-radius-topleft: 40px;
+	-moz-border-radius-topright: 40px;
+	/* Navegadores basados en 'Chrome' */
+	-webkit-border-top-left-radius: 40px;
+	-webkit-border-top-right-radius: 40px;
+	/* decorazion para el DIV que tendra mi encabezado 
+	   1*- tipo de sombreado dentro o fuera
+	   2*- Eje en x ubicacion 0px siempre cambio
+	   3*- Eje en y ubicacion 0px siempre cambio
+	   4*- Bluer el degradado de la sombre entre 
+           mas cerca del 0 este mas solida es la sombre.
+	   5*- Color de la sombra (ingles, hexadecimal, rgb, rgba),
+	*/
+	box-shadow: inset 0px 0px 75px #68e3e3;
+	-moz-box-shadow: inset 0px 0px 75px #68e3e3;
+	-webkit-box-shadow: inset 0px 0px 75px #68e3e3;
+}
+/* selectore exclusivos */
+.encabezado img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+.menu {
+	/* Estructura visual del 'DIV' 
+	background-color: rgb(77,87,114); */
+	-moz-box-shadow: 2px 1px 27px #68e3e3;
+	-webkit-box-shadow: 2px 1px 27px #68e3e3;
+	box-shadow: 2px 1px 27px #68e3e3;
+	margin:auto;
+	margin-top: 18px;
+	width: 88%;
+	height: 30px;
+	border-radius: 35px;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	/* propiades de texto */
+	font-family:"kindergarten";
+	color:#FF0000;
+	}
+.menu table {
+	margin:auto;
+	width: 100%;
+	padding-left: 10px;
+	border: 0px;
+	}
+.contenido {
+	width: 86%;
+	height: 100%;
+	margin:auto;
+	/* background-color: rgb(77,87,114); */
+	-moz-box-shadow: -7px 13px 38px #68e3e3;
+	-webkit-box-shadow: -7px 13px 38px #68e3e3;
+	box-shadow: -7px 13px 38px #68e3e3;
+	/* margen del div al borde del monitor */ 
+	margin-top:20px;
+	/* margen del div hacia las letras */
+	padding: 15px;
+	/* borde redondeado en la parte inerior*/
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	-moz-border-radius-bottomleft:35px;
+	-moz-border-radius-bottomright: 358px;
+	-webkit-border-bottom-left-radius:35px;
+	-webkit-border-bottom-right-radius:35px;
+	/* propiedades de texto */
+	font-size: 14px;
+	font-family:kindergarten;
+	color: #68e3e3;
+	}
+.pie {
+	width: 80%;
+	height: 35px;
+	color:#FFF;
+	font-family:"1942 report";
+	/* Visual para el pie de pagina con sombra */
+	border-radius: 35px;
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+	box-shadow: 1px 6px 30px #68e3e3 inset;
+	-moz-box-shadow: 1px 6px 30px #68e3e3 inset;
+	-webkit-box-shadow: 1px 6px 30px #68e3e3 inset;
+	margin:auto;
+	margin-top: 40px;
+	padding-top: 10px;
+	background-color:#000;
+	}
+
+
+
+/*************************************************
+  **************Animacion al encabezado***********
+*/
+#Animacion {
+-webkit-animation: cssAnimation 1s 3 ease;
+-moz-animation: cssAnimation 1s 3 ease;
+-o-animation: cssAnimation 1s 3 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(0.813) skew(-43deg) translate(-181px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(0.813) skew(-43deg) translate(-181px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(0.813) skew(-43deg) translate(-181px); }
+}
+/*********************************************
+ ***********Animaciones con mouse*********/
+#visual:hover {
+	color:#68e3e3;
+	font-size:18px;
+	transition:All 0.5856s ease;
+	-webkit-transition:All 0.5856s ease;
+	-moz-transition:All 0.5856s ease;
+	-o-transition:All 0.5856s ease;
+	transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+	-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+	-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+	-o-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+	-ms-transform: rotate(0deg) scale(1) skew(1deg) translate(10px);
+}
+#visual{
+		color:#000;
+		transform: rotate(10deg) scale(0.892) skew(20deg) translate(-39px);
+		-webkit-transform: rotate(10deg) scale(0.892) skew(20deg) translate(-39px);
+		-moz-transform: rotate(10deg) scale(0.892) skew(20deg) translate(-39px);
+		-o-transform: rotate(10deg) scale(0.892) skew(20deg) translate(-39px);
+		-ms-transform: rotate(10deg) scale(0.892) skew(20deg) translate(-39px);
+}
